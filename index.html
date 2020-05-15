@@ -39,42 +39,77 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Miriam Hänle - My first website</title>
+    <title>Miriam Hänle - personal website</title>
     <link rel="icon" href="img/favicon.ico" type="favicon" />
   </head>
 
   <body>
-    <head class="container-fluid">
-      <h1>Miriam Hänle - personal website</h1>
-      <nav>
-        <ul>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#bio">Bio</a></li>
-        </ul>
-      </nav>
+    <head class="container">
+      <div class="row d-flex">
+        <div class="col-12 col-md-8">
+          <h1>Miriam Hänle</h1>
+        </div>
+        <div class="col-12 col-md-4">
+          <nav>
+            <a href="#contact">Contact</a>
+            <a href="#bio">Bio</a>
+          </nav>
+        </div>
+      </div>
     </head>
 
     <main class="container">
       <!-- Start top summary-->
-      <section>
-        <img src="/img/PH9A4352.jpg" alt="Image of owner Miriam smiling" />
-        <caption>
-          image
-        </caption>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga
-          minima eos recusandae quas impedit doloremque sapiente. Commodi,
-          eligendi quasi.
-        </p>
+      <section class="row">
+        <div class="col-12">
+          <img
+            src="/img/PH9A4352.jpg"
+            alt="Image of Miriam smiling"
+            class="img-fluid"
+          />
+          <caption>
+            image
+          </caption>
+          <p>
+            Former digital project manager turned web developer Padawan on my
+            way to becoming a frontend Jedi. I know how to get the WHY and the
+            WHAT. Now I'm on my mission to also learn the HOW. HOW to build
+            this.
+          </p>
+        </div>
 
         <!-- Skills & Interests summary -->
 
-        <aside>
+        <aside class="col-12">
           <article>
-            <h2>Skills</h2>
+            <h2>My Skills & Experience</h2>
+            <ul class="list-unstyled">
+              <span class="badge badge-pill badge-primary"><li>HTML</li></span>
+              <span class="badge badge-pill badge-primary"><li>CSS</li></span>
+              <span class="badge badge-pill badge-primary"
+                ><li>Vanilla JavaScript</li></span
+              >
+              <span class="badge badge-pill badge-primary"><li>React</li></span>
+              <span class="badge badge-pill badge-primary"><li>Agile</li></span>
+              <span class="badge badge-pill badge-primary"
+                ><li>Design</li></span
+              >
+            </ul>
           </article>
           <article>
-            <h2>Interest</h2>
+            <h2>Interests</h2>
+            <ul class="list-unstyled">
+              <span class="badge badge-pill badge-primary"><li>Swim</li></span>
+              <span class="badge badge-pill badge-primary"><li>Bike</li></span>
+              <span class="badge badge-pill badge-primary"><li>Run</li></span>
+              <span class="badge badge-pill badge-primary"><li>Eat</li></span>
+              <span class="badge badge-pill badge-primary"
+                ><li>Repeat</li></span
+              >
+              <span class="badge badge-pill badge-primary"
+                ><li>Coffee</li></span
+              >
+            </ul>
           </article>
         </aside>
       </section>
@@ -91,8 +126,20 @@
       <!-- Professional Links -->
       <section>
         <address>
-          <a href="https://github.com/miriamhaenle">Find me on GitHub</a>
-          <a href="https://codepen.io/dashboard/">Find me on Codepen</a>
+          <img src="/img/github.png" alt="Github Logo" class="img-fluid" /><a
+            href="https://github.com/miriamhaenle"
+            >Find me on GitHub</a
+          >
+          <img
+            src="/img/227-2271566_codepen-logo.png"
+            alt="Codepen Logo"
+            class="img-fluid"
+          /><a href="https://codepen.io/dashboard/">Find me on Codepen</a>
+          <img
+            src="/img/linkedin-icon-2.svg"
+            alt="LinkedIn Logo"
+            class="img-fluid"
+          />
           <a href="https://de.linkedin.com/in/miriamhaenle"
             >Find me on LinkedIn</a
           >
@@ -104,10 +151,9 @@
         <h2>About me</h2>
         <h3>Who am I?</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cumque
-          quisquam eum accusantium animi ducimus earum in minus sequi magni
-          deleniti beatae molestias ut laboriosam, quos, corrupti asperiores
-          atque distinctio?
+          Former digital project manager turned web developer Padawan on my way
+          to becoming a frontend Jedi. I know how to get the WHY and the WHAT.
+          Now I'm on my mission to also learn the HOW. HOW to build this.
         </p>
 
         <table>
