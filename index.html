@@ -13,35 +13,141 @@
     />
     <meta name="author" content="Miriam Hänle" />
 
-    <!-- Insert Bootstrap connection here -->
-    <title>Document</title>
+    <!-- Bootsrap Integration -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Miriam Hänle - My first website</title>
+    <link rel="icon" href="img/favicon.ico" type="favicon" />
   </head>
+
   <body>
-    <head>
+    <head class="container-fluid">
+      <h1>Miriam Hänle - personal website</h1>
       <nav>
         <ul>
-          <li>Miriam Hänle</li>
-          <li>Kontakt</li>
-          <li>Biography</li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#bio">Bio</a></li>
         </ul>
       </nav>
     </head>
-    <main>
+
+    <main class="container">
       <!-- Start top summary-->
       <section>
-        <!-- Skill summary -->
+        <img src="/img/PH9A4352.jpg" alt="Image of owner Miriam smiling" />
+        <caption>
+          image
+        </caption>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga
+          minima eos recusandae quas impedit doloremque sapiente. Commodi,
+          eligendi quasi.
+        </p>
 
-        <!-- Hobbies -->
+        <!-- Skills & Interests summary -->
+
+        <aside>
+          <article>
+            <h2>Skills</h2>
+          </article>
+          <article>
+            <h2>Interest</h2>
+          </article>
+        </aside>
       </section>
 
       <!-- Contact -->
-      <section></section>
+      <section>
+        <h2 id="contact">Contact</h2>
+        <address>
+          <a href="mailto:miriam.haenle@gmail.com">miriam.haenle@gmail.com</a>
+          <a href="tel:+4917623440420">+49 176 23 440 420</a>
+        </address>
+      </section>
 
       <!-- Professional Links -->
-      <section></section>
+      <section>
+        <address>
+          <a href="https://github.com/miriamhaenle">Find me on GitHub</a>
+          <a href="https://codepen.io/dashboard/">Find me on Codepen</a>
+          <a href="https://de.linkedin.com/in/miriamhaenle"
+            >Find me on LinkedIn</a
+          >
+        </address>
+      </section>
 
       <!-- About Me & CV -->
-      <section></section>
+      <section id="bio">
+        <h2>About me</h2>
+        <h3>Who am I?</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cumque
+          quisquam eum accusantium animi ducimus earum in minus sequi magni
+          deleniti beatae molestias ut laboriosam, quos, corrupti asperiores
+          atque distinctio?
+        </p>
+
+        <table>
+          <caption>
+            CV
+          </caption>
+          <thead>
+            CV
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="2">Professional Experience</th>
+            </tr>
+            <tr>
+              <td>2016 - 2020</td>
+              <td>umwerk GmbH - Digital Project manager</td>
+            </tr>
+            <tr>
+              <td>2014 - 2016</td>
+              <td>Chefkoch GmbH - Student Assistant (Editorial Staff & IT)</td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <th colspan="2">Education</th>
+            </tr>
+            <tr>
+              <td>2014 - 2016</td>
+              <td>
+                Technology and Innovation Communication (M.Sc)
+              </td>
+            </tr>
+            <tr>
+              <td>2010 - 2014</td>
+              <td>Information Management and Corporate Communication (BA)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     <footer>Miriam Hänle 2020</footer>
   </body>
