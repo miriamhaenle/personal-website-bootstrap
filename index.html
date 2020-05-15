@@ -44,15 +44,25 @@
   </head>
 
   <body>
-    <head class="container">
-      <div class="row d-flex">
-        <div class="col-12 col-md-8">
-          <h1>Miriam Hänle</h1>
+    <!-- DEVICE DEFINITION 
+      Mobile < 768px (small & x-small)
+      Tablet & Desktop >= 768 (medium, large, x-large)
+    -->
+    <head>
+      <div
+        class="d-flex flex-column flex-md-row align-items-center justify-content-md-around p-3 p-md-5 bg-secondary"
+      >
+        <div>
+          <h1 class="text-white">Miriam Hänle</h1>
         </div>
-        <div class="col-12 col-md-4">
-          <nav>
-            <a href="#contact">Contact</a>
-            <a href="#bio">Bio</a>
+        <div>
+          <nav class="nav nav-pills">
+            <a href="#contact" class="nav-link active bg-light text-dark mx-2"
+              >Contact</a
+            >
+            <a href="#bio" class="nav-link active bg-light text-dark mx-2"
+              >Biography</a
+            >
           </nav>
         </div>
       </div>
@@ -60,27 +70,22 @@
 
     <main class="container">
       <!-- Start top summary-->
-      <section class="row">
-        <div class="col-12">
+      <section class="row mt-5">
+        <figure class="col-12 col-md-6 figure">
           <img
             src="/img/PH9A4352.jpg"
-            alt="Image of Miriam smiling"
-            class="img-fluid"
+            alt="Picture of author"
+            class="img-fluid rounded"
           />
-          <caption>
-            image
-          </caption>
-          <p>
-            Former digital project manager turned web developer Padawan on my
-            way to becoming a frontend Jedi. I know how to get the WHY and the
-            WHAT. Now I'm on my mission to also learn the HOW. HOW to build
-            this.
-          </p>
-        </div>
+          <figcaption class="figure-caption">
+            From Digital Project Manager to Web Dev Padawan. I mainly run on
+            coffee.
+          </figcaption>
+        </figure>
 
         <!-- Skills & Interests summary -->
 
-        <aside class="col-12">
+        <aside class="col-12 col-md-6">
           <article>
             <h2>My Skills & Experience</h2>
             <ul class="list-unstyled">
@@ -104,10 +109,10 @@
               <span class="badge badge-pill badge-primary"><li>Run</li></span>
               <span class="badge badge-pill badge-primary"><li>Eat</li></span>
               <span class="badge badge-pill badge-primary"
-                ><li>Repeat</li></span
+                ><li>Coffee</li></span
               >
               <span class="badge badge-pill badge-primary"
-                ><li>Coffee</li></span
+                ><li>Repeat</li></span
               >
             </ul>
           </article>
@@ -115,84 +120,167 @@
       </section>
 
       <!-- Contact -->
-      <section>
+      <section class="shadow p-5">
         <h2 id="contact">Contact</h2>
         <address>
-          <a href="mailto:miriam.haenle@gmail.com">miriam.haenle@gmail.com</a>
-          <a href="tel:+4917623440420">+49 176 23 440 420</a>
+          <span class="mx-md-5"
+            ><svg
+              class="bi bi-phone"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11 1H5a1 1 0 00-1 1v12a1 1 0 001 1h6a1 1 0 001-1V2a1 1 0 00-1-1zM5 0a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V2a2 2 0 00-2-2H5z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M8 14a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"
+              /></svg
+            ><a href="mailto:miriam.haenle@gmail.com"
+              >miriam.haenle@gmail.com</a
+            ></span
+          >
+          <span class="mx-md-5"
+            ><svg
+              class="bi bi-envelope"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M6.752 8.932l.432-.252-.504-.864-.432.252.504.864zm-6 3.5l6-3.5-.504-.864-6 3.5.504.864zm8.496-3.5l-.432-.252.504-.864.432.252-.504.864zm6 3.5l-6-3.5.504-.864 6 3.5-.504.864z"
+              /></svg
+            ><a href="tel:+4917623440420">+49 176 23 440 420</a></span
+          >
         </address>
       </section>
 
       <!-- Professional Links -->
       <section>
-        <address>
-          <img src="/img/github.png" alt="Github Logo" class="img-fluid" /><a
-            href="https://github.com/miriamhaenle"
-            >Find me on GitHub</a
-          >
-          <img
-            src="/img/227-2271566_codepen-logo.png"
-            alt="Codepen Logo"
-            class="img-fluid"
-          /><a href="https://codepen.io/dashboard/">Find me on Codepen</a>
-          <img
-            src="/img/linkedin-icon-2.svg"
-            alt="LinkedIn Logo"
-            class="img-fluid"
-          />
-          <a href="https://de.linkedin.com/in/miriamhaenle"
-            >Find me on LinkedIn</a
-          >
+        <address class="row p-4 justify-content-md-around">
+          <div class="card col-12 col-md-3 m-2 text-center bg-light">
+            <div>
+              <img
+                src="/img/github.png"
+                alt="Github Logo"
+                class="card-image-top w-100 p-3"
+              />
+            </div>
+            <div class="card-body">
+              <a href="https://github.com/miriamhaenle" class="card-text"
+                >Find me on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 m-2 text-center bg-light">
+            <div>
+              <img
+                src="/img/227-2271566_codepen-logo.png"
+                alt="Codepen Logo"
+                class="card-image-top w-100 p-3"
+              />
+            </div>
+            <div class="card-body">
+              <a href="https://codepen.io/dashboard/" class="card-text"
+                >Find me on Codepen</a
+              >
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 m-2 text-center bg-light">
+            <div>
+              <img
+                src="/img/linkedin-icon-2.svg"
+                alt="LinkedIn Logo"
+                class="card-image-top w-100 p-3"
+              />
+            </div>
+            <div class="card-body">
+              <a
+                href="https://de.linkedin.com/in/miriamhaenle"
+                class="card-text"
+                >Find me on LinkedIn</a
+              >
+            </div>
+          </div>
         </address>
       </section>
 
       <!-- About Me & CV -->
       <section id="bio">
         <h2>About me</h2>
-        <h3>Who am I?</h3>
-        <p>
-          Former digital project manager turned web developer Padawan on my way
-          to becoming a frontend Jedi. I know how to get the WHY and the WHAT.
-          Now I'm on my mission to also learn the HOW. HOW to build this.
-        </p>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3>Who am I?</h3>
+            <p>
+              Former digital project manager turned web developer Padawan on my
+              way to becoming a frontend Jedi. I know how to get the WHY and the
+              WHAT. Now I'm on my mission to also learn the HOW. HOW to build
+              this.
+            </p>
+          </div>
 
-        <table>
-          <caption>
-            CV
-          </caption>
-          <thead>
-            CV
-          </thead>
-          <tbody>
-            <tr>
-              <th colspan="2">Professional Experience</th>
-            </tr>
-            <tr>
-              <td>2016 - 2020</td>
-              <td>umwerk GmbH - Digital Project manager</td>
-            </tr>
-            <tr>
-              <td>2014 - 2016</td>
-              <td>Chefkoch GmbH - Student Assistant (Editorial Staff & IT)</td>
-            </tr>
-          </tbody>
+          <div class="col-12 col-md-6">
+            <table>
+              <caption>
+                CV
+              </caption>
+              <thead>
+                CV
+              </thead>
+              <tbody>
+                <tr>
+                  <th colspan="2">Professional Experience</th>
+                </tr>
+                <tr>
+                  <td>2016 - 2020</td>
+                  <td>umwerk GmbH - Digital Project manager</td>
+                </tr>
+                <tr>
+                  <td>2014 - 2016</td>
+                  <td>
+                    Chefkoch GmbH - Student Assistant (Editorial Staff & IT)
+                  </td>
+                </tr>
+              </tbody>
 
-          <tbody>
-            <tr>
-              <th colspan="2">Education</th>
-            </tr>
-            <tr>
-              <td>2014 - 2016</td>
-              <td>
-                Technology and Innovation Communication (M.Sc)
-              </td>
-            </tr>
-            <tr>
-              <td>2010 - 2014</td>
-              <td>Information Management and Corporate Communication (BA)</td>
-            </tr>
-          </tbody>
-        </table>
+              <tbody>
+                <tr>
+                  <th colspan="2">Education</th>
+                </tr>
+                <tr>
+                  <td>2014 - 2016</td>
+                  <td>
+                    Technology and Innovation Communication (M.Sc)
+                  </td>
+                </tr>
+                <tr>
+                  <td>2010 - 2014</td>
+                  <td>
+                    Information Management and Corporate Communication (BA)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
     </main>
     <footer>Miriam Hänle 2020</footer>
