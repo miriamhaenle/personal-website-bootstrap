@@ -48,13 +48,21 @@
       Mobile < 768px (small & x-small)
       Tablet & Desktop >= 768 (medium, large, x-large)
     -->
-    <head>
-      <div
-        class="d-flex flex-column flex-md-row align-items-center justify-content-md-around p-3 p-md-3 bg-light shadow"
-      >
-        <div class="mb-2 mb-md-0">
-          <h1 class="text-muted">Miriam Hänle</h1>
-        </div>
+
+    <!--  
+    <header class="d-none d-md-block">
+      <div class="d-flex justify-content-between bg-light shadow">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around">
+          <div
+            class="p-3 p-md-3 bg-light"
+          >
+            <div class="mb-2 mb-md-0">
+              <h1 class="text-muted">Miriam Hänle</h1>
+            </div>
+          </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around sticky-top">
         <div>
           <nav class="nav nav-pills">
             <a href="#contact" class="nav-link active bg-info mx-2">Contact</a>
@@ -62,14 +70,77 @@
           </nav>
         </div>
       </div>
-    </head>
+    </div>
+  
+    </header>
 
-    <main class="container m-N3">
+    <nav class="d-md-none d-sm-block d-flex flex-column flex-md-row align-items-center justify-content-md-around bg-light shadow">
+      <div
+        class="p-3 p-md-3 bg-light"
+      >
+        <div class="mb-2 mb-md-0">
+          <h1 class="text-muted">Miriam Hänle</h1>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="d-md-none d-sm-block  d-flex flex-column flex-md-row align-items-center justify-content-md-around bg-light shadow sticky-top">
+      <div>
+        <nav class="nav nav-pills">
+          <a href="#contact" class="nav-link active bg-info mx-2">Contact</a>
+          <a href="#bio" class="nav-link active bg-info mx-2">Biography</a>
+        </nav>
+      </div>
+    </nav> -->
+
+    <header
+      aria-labelledby="desktop-navigation"
+      class="d-none d-md-block bg-ligh shadow-sm"
+    >
+      <div class="d-flex flex-row justify-content-between">
+        <h1 class="text-muted">Miriam Hänle Desktop</h1>
+      </div>
+      <nav class="d-flex">
+        <ul class="list-unstyled nav-pills">
+          <li class="nav-item">
+            <a href="#contact" class="nav-link active bg-info mx-2">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#bio" class="nav-link active bg-info mx-2">Bio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Mobile Sticky Navigation-->
+    <nav
+      aria-labelledby="mobile-navigation"
+      class="d-sm-block d-md-none bg-light m-0 p-2"
+    >
+      <div class="">
+        <h1 class="text-muted text-center">Miriam Hänle</h1>
+      </div>
+    </nav>
+
+    <nav
+      class="d-sm-block d-md-none d-flex d-flex flex-column align-items-center sticky-top bg-light shadow-sm pt-2"
+    >
+      <ul class="list-unstyled nav-pills">
+        <li class="nav-item">
+          <a href="#contact" class="nav-link active bg-info m-1">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#bio" class="nav-link active bg-info m-1">Bio</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container m-N2">
       <!-- Start top summary-->
 
       <section class="row mt-5">
         <figure class="col-12 col-md-6">
-          <div class="p-3 ">
+          <div class="p-3">
             <img
               src="img/PH9A4352.jpg"
               alt="Picture of author"
@@ -141,8 +212,8 @@
       <div class="shadow-sm">
         <section class="p-3 p-md-3">
           <address class="mt-md-3 d-md-flex justify-content-md-center">
-            <div class="mx-md-5 d-block d-md-inline mt-3"
-              ><svg
+            <div class="mx-md-5 d-block d-md-inline mt-3">
+              <svg
                 class="bi bi-phone mx-2"
                 width="1.5em"
                 height="1.5em"
@@ -162,10 +233,10 @@
                 /></svg
               ><a href="mailto:miriam.haenle@gmail.com"
                 >miriam.haenle@gmail.com</a
-              ></div
-            >
-            <div class="mx-md-5 d-block d-md-inline mt-3"
-              ><svg
+              >
+            </div>
+            <div class="mx-md-5 d-block d-md-inline mt-3">
+              <svg
                 class="bi bi-envelope mx-2"
                 width="1.5em"
                 height="1.5em"
@@ -186,11 +257,11 @@
                 <path
                   d="M6.752 8.932l.432-.252-.504-.864-.432.252.504.864zm-6 3.5l6-3.5-.504-.864-6 3.5.504.864zm8.496-3.5l-.432-.252.504-.864.432.252-.504.864zm6 3.5l-6-3.5.504-.864 6 3.5-.504.864z"
                 /></svg
-              ><a href="tel:+4917623440420">+49 176 23 440 420</a></div
-            >
+              ><a href="tel:+4917623440420">+49 176 23 440 420</a>
+            </div>
           </address>
         </section>
-  
+
         <!-- Professional Links -->
         <section>
           <div class="d-flex row mx-5 m-md-1 pb-3 justify-content-center">
@@ -205,7 +276,7 @@
                   alt="Github Logo"
                   class="img-fluid p-5"
                 />
-                Find me on<br>GitHub</a
+                Find me on<br />GitHub</a
               >
             </div>
             <div class="col-12 col-md-3 w-100 text-center">
@@ -217,7 +288,7 @@
                   src="img/227-2271566_codepen-logo.png"
                   alt="Codepen Logo"
                   class="img-fluid p-5"
-                />Find me on<br>Codepen</a
+                />Find me on<br />Codepen</a
               >
             </div>
             <div class="col-12 col-md-3 w-100 text-center">
@@ -229,7 +300,7 @@
                   src="img/linkedin-icon-2.svg"
                   alt="LinkedIn Logo"
                   class="img-fluid p-5"
-                />Find me on<br>LinkedIn</a
+                />Find me on<br />LinkedIn</a
               >
             </div>
           </div>
@@ -248,12 +319,21 @@
               WHAT. Now I'm on my mission to also learn the HOW. HOW to build
               this.
             </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quo ut dolorum suscipit eveniet error earum voluptates praesentium repellendus voluptas?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aperiam quibusdam laudantium dicta qui commodi porro consequuntur itaque veritatis molestias soluta harum, vero, impedit facere a odio, aliquid numquam dolorum.</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              quo ut dolorum suscipit eveniet error earum voluptates praesentium
+              repellendus voluptas?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+              aperiam quibusdam laudantium dicta qui commodi porro consequuntur
+              itaque veritatis molestias soluta harum, vero, impedit facere a
+              odio, aliquid numquam dolorum.
+            </p>
           </div>
 
           <div class="col-12 col-md-6">
-            <h3>Curriculum Vitae</h4>
+            <h3>Curriculum Vitae</h3>
             <table class="table">
               <thead class="h4"></thead>
               <tbody>
