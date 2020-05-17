@@ -49,67 +49,31 @@
       Tablet & Desktop >= 768 (medium, large, x-large)
     -->
 
-    <!--  
-    <header class="d-none d-md-block">
-      <div class="d-flex justify-content-between bg-light shadow">
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around">
-          <div
-            class="p-3 p-md-3 bg-light"
-          >
-            <div class="mb-2 mb-md-0">
-              <h1 class="text-muted">Miriam Hänle</h1>
-            </div>
-          </div>
-      </div>
-  
-      <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around sticky-top">
-        <div>
-          <nav class="nav nav-pills">
-            <a href="#contact" class="nav-link active bg-info mx-2">Contact</a>
-            <a href="#bio" class="nav-link active bg-info mx-2">Biography</a>
+    <header
+      aria-labelledby="desktop-navigation"
+      class="d-none d-md-block bg-ligh shadow-sm py-2 px-3"
+    >
+      <div class="d-flex flex-md-row justify-content-between">
+        <div class="">
+          <h1 class="text-muted">Miriam Hänle</h1>
+        </div>
+        <div class="d-fex flex-md-row justify-content-md-between">
+          <nav class="">
+            <ul class="list-unstyled nav nav-pills">
+              <li class="nav-item">
+                <a href="#contact" class="nav-link active bg-info mx-2"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#bio" class="nav-link active bg-info mx-2"
+                  >Biography</a
+                >
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
-    </div>
-  
-    </header>
-
-    <nav class="d-md-none d-sm-block d-flex flex-column flex-md-row align-items-center justify-content-md-around bg-light shadow">
-      <div
-        class="p-3 p-md-3 bg-light"
-      >
-        <div class="mb-2 mb-md-0">
-          <h1 class="text-muted">Miriam Hänle</h1>
-        </div>
-      </div>
-    </nav>
-
-    <nav class="d-md-none d-sm-block  d-flex flex-column flex-md-row align-items-center justify-content-md-around bg-light shadow sticky-top">
-      <div>
-        <nav class="nav nav-pills">
-          <a href="#contact" class="nav-link active bg-info mx-2">Contact</a>
-          <a href="#bio" class="nav-link active bg-info mx-2">Biography</a>
-        </nav>
-      </div>
-    </nav> -->
-
-    <header
-      aria-labelledby="desktop-navigation"
-      class="d-none d-md-block bg-ligh shadow-sm"
-    >
-      <div class="d-flex flex-row justify-content-between">
-        <h1 class="text-muted">Miriam Hänle Desktop</h1>
-      </div>
-      <nav class="d-flex">
-        <ul class="list-unstyled nav-pills">
-          <li class="nav-item">
-            <a href="#contact" class="nav-link active bg-info mx-2">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="#bio" class="nav-link active bg-info mx-2">Bio</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <!--Mobile Sticky Navigation-->
@@ -127,10 +91,14 @@
     >
       <ul class="list-unstyled nav-pills">
         <li class="nav-item">
-          <a href="#contact" class="nav-link active bg-info m-1">Contact</a>
+          <a href="#contact" class="nav-link active bg-info m-1 text-center"
+            >Contact</a
+          >
         </li>
         <li class="nav-item">
-          <a href="#bio" class="nav-link active bg-info m-1">Bio</a>
+          <a href="#bio" class="nav-link active bg-info m-1 text-center"
+            >Biography</a
+          >
         </li>
       </ul>
     </nav>
